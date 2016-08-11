@@ -1,0 +1,12 @@
+D40D4B6F31B9BBBFBE02876D049F11C1  c:\Software\Microsoft\en_windows_server_2012_r2_with_update_x64_dvd_6052708_SkipProductKey.iso
+
+packer build -var "iso_url=c:\Software\Microsoft\en_windows_server_2012_r2_with_update_x64_dvd_6052708_SkipProductKey.iso" -var "iso_checksum=D40D4B6F31B9BBBFBE02876D049F11C1" windows_2012_r2.json
+
+78BFF6565F178ED08AB534397FE44845  c:\Software\Microsoft\en_windows_server_2012_r2_with_update_x64_dvd_6052708.iso
+
+packer build -var "iso_url=c:\Software\Microsoft\en_windows_server_2012_r2_with_update_x64_dvd_6052708.iso" -var "iso_checksum=78BFF6565F178ED08AB534397FE44845" windows_2012_r2.json
+
+C:\Utils\packer-windows>vagrant box add c:\utils\packer-windows\windows_2012_r2_virtualbox.box --name windows_2012_r2_msdn
+
+https://github.com/aidanns/vagrant-reload
+
